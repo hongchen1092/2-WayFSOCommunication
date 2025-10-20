@@ -69,5 +69,3 @@ Use the correct COM port or `/dev/tty` path if not auto-detected.
 - UART pins wired per config (TX18 → RX19)  
 
 ---
-
-© 2025 Udaya Nirmal Fernando Kristhobuge
