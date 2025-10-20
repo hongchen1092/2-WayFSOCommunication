@@ -25,7 +25,7 @@ It runs on the **ESP32-S3** and receives **TinyUSB HID host data** over a **UART
 - **ESP-IDF:** v5.0 or newer  
 - **Toolchain:** xtensa-esp32s3-elf (v14.2.0 recommended)  
 - **Python:** ≥ 3.11  
-- Works on Windows / Linux with ESP-IDF CLI or VS Code extension  
+- Works on Windows 
 
 ---
 
@@ -70,4 +70,3 @@ Use the correct COM port or `/dev/tty` path if not auto-detected.
 
 ---
 
-© 2025 Udaya Nirmal Fernando Kristhobuge
