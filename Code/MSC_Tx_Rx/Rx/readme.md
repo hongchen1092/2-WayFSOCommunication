@@ -1,1 +1,0 @@
-rx for msc class
