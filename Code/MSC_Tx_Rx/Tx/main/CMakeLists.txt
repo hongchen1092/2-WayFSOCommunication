@@ -5,7 +5,7 @@ if(CONFIG_EXAMPLE_STORAGE_MEDIA_SPIFLASH)
 endif()
 
 idf_component_register(
-    SRCS "esp2_device_uart_bridge.c"
+    SRCS "main.c" "esp2_device_uart_bridge.c"
     INCLUDE_DIRS .
     PRIV_REQUIRES "${priv_requires}"
     REQUIRES esp_driver_uart
