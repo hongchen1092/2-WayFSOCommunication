@@ -1,0 +1,5 @@
+## IDF Component Manager Manifest File
+dependencies:
+  idf: ">=5.5" # Make sure IDF version is compatible
+  espressif/usb_host_hid: "^1.0.4" # Or your specific version
+  espressif/usb_host_msc: "*" # Use a recent version
