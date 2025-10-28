@@ -1,18 +1,23 @@
-/*
- * SPDX-FileCopyrightText: 2022-2025 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: Unlicense OR CC0-1.0
- *
- * UART BRIDGE - ROBUST VERSION
- *
- * Changes:
- * - Added a mutex (g_uart_mutex) to protect all UART operations.
- * This prevents multiple TinyUSB callbacks from trying to use the
- * UART bridge at the same time, which corrupts the protocol.
- * - `app_main` no longer blocks.
- * - `tud_msc_capacity_cb` and `tud_msc_test_unit_ready_cb` now
- * drive the logic for fetching/resetting capacity.
- */
+//-------------------------------------------------------------------------
+// The University of Western Australia
+// Faculty of Engineering and Mathematical Sciences
+// ELEC5550 - Design Project
+// 2-Way Free Space Optical Communications System
+//-------------------------------------------------------------------------
+// Team 27
+// Author(s):
+// 23171349 - Ralph Pilapil
+// 24349076 - Karma Norbu
+// 24159891 - Rigzing Sherpa
+// 23280761 - Hongyuan Chen
+// 24639919 - Udaya Kristhbuge
+// 24577152 - Kaushika Hewa Panvila
+//-------------------------------------------------------------------------
+// File Name: esp2_device_uart_bridge.c
+// Description:MSC Device side code
+// Using standard tinyusb library functions to enumarate an MSC class usb device on PC
+// Project Partners: UWA, ANFF
+//-------------------------------------------------------------------------
 
 #include <stdlib.h>
 #include <string.h>
