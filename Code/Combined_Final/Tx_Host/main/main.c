@@ -1,13 +1,28 @@
-/**
- * Unified Host (TX) — HID + MSC over UART (FSO)
- *
- * FINAL CORRECTED VERSION:
- * - Includes <endian.h> to fix compilation errors.
- * - Includes msc_tx.c's uart_bridge_task for 2-way MSC communication.
- * - Correctly starts/stops uart_bridge_task on MSC connect/disconnect.
- * - Correctly calls hid_host_device_close() on HID disconnect.
- * - Correctly calls msc_host_uninstall_device() on MSC disconnect.
- */
+//-------------------------------------------------------------------------
+// The University of Western Australia
+// Faculty of Engineering and Mathematical Sciences
+// ELEC5550 - Design Project
+// 2-Way Free Space Optical Communications System
+//-------------------------------------------------------------------------
+// Team 27
+// Author(s):
+// 23171349 - Ralph Pilapil
+// 24349076 - Karma Norbu
+// 24159891 - Rigzing Sherpa
+// 23280761 - Hongyuan Chen
+// 24639919 - Udaya Kristhbuge
+// 24577152 - Kaushika Hewa Panvila
+//-------------------------------------------------------------------------
+// File Name: main.c
+// Description: Combined Final Code - Host Side
+// Runs the state machine as per the connected USB Device and hosts it dynamically
+// Includes msc_tx.c's uart_bridge_task for 2-way MSC communication.
+// Correctly starts/stops uart_bridge_task on MSC connect/disconnect.
+// Correctly calls hid_host_device_close() on HID disconnect.
+// Correctly calls msc_host_uninstall_device() on MSC disconnect.
+// Project Partners: UWA, ANFF
+//-------------------------------------------------------------------------
+
 
 #include <stdio.h>
 #include <string.h>
@@ -713,4 +728,5 @@ void app_main(void) {
             }
         } // <-- End of if(xQueueReceive)
     } // <-- End of while(1)
+
 } // <-- End of app_main
