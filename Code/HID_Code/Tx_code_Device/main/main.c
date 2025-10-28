@@ -1,3 +1,25 @@
+//-------------------------------------------------------------------------
+// The University of Western Australia
+// Faculty of Engineering and Mathematical Sciences
+// ELEC5550 - Design Project
+// 2-Way Free Space Optical Communications System
+//-------------------------------------------------------------------------
+// Team 27
+// Author(s):
+// 23171349 - Ralph Pilapil
+// 24349076 - Karma Norbu
+// 24159891 - Rigzing Sherpa
+// 23280761 - Hongyuan Chen
+// 24639919 - Udaya Kristhbuge
+// 24577152 - Kaushika Hewa Panvila
+//-------------------------------------------------------------------------
+// File Name: main.c
+// Description: HID Host side code
+// Defines custom UART FRAME for mouse and keyboard data and push it to UART1 (8n1)
+// Dynamically Identify the connected device and initiates the correct framing
+// Project Partners: UWA, ANFF
+//---------------------------------------------------------------------
+
 #include <stdio.h>
 #include <string.h>
 #include "freertos/FreeRTOS.h"
