@@ -1,0 +1,25 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "C:\\Users\\Kaush\\esp\\v5.5.1\\esp-idf",
+  "idf.toolsPathWin": "c:\\Users\\Kaush\\.espressif",
+  "idf.pythonInstallPath": "c:\\Users\\Kaush\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+  "idf.portWin": "COM9",
+  "idf.flashType": "UART",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "clangd.path": "c:\\Users\\Kaush\\.espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=c:\\Users\\Kaush\\.espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20241119\\xtensa-esp-elf\\bin\\xtensa-esp32s3-elf-gcc.exe",
+    "--compile-commands-dir=c:\\Users\\Kaush\\OneDrive\\Desktop\\HID\\hid\\build"
+  ],
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "files.associations": {
+    "usb_host.h": "c",
+    "string.h": "c",
+    "task.h": "c"
+  }
+}
