@@ -1,6 +1,24 @@
-// main.c — ESP32-S3 Device (RX/TX) — Composite HID (mouse+kbd) + MSC with UART bridge
-// Matches the host protocol you posted (announce + HID frames; raw MSC SCSI bridge).
-// IDF v5.x + TinyUSB device (composite)
+//-------------------------------------------------------------------------
+// The University of Western Australia
+// Faculty of Engineering and Mathematical Sciences
+// ELEC5550 - Design Project
+// 2-Way Free Space Optical Communications System
+//-------------------------------------------------------------------------
+// Team 27
+// Author(s):
+// 23171349 - Ralph Pilapil
+// 24349076 - Karma Norbu
+// 24159891 - Rigzing Sherpa
+// 23280761 - Hongyuan Chen
+// 24639919 - Udaya Kristhbuge
+// 24577152 - Kaushika Hewa Panvila
+//-------------------------------------------------------------------------
+// File Name: main.c
+// Description: Combined Final Code - Host Side
+// Initiates a state machine to identify the connected the device and used host libraries to host it.
+// Project Partners: UWA, ANFF
+//-------------------------------------------------------------------------
+ 
 
 #include <stdio.h>
 #include <string.h>
@@ -477,3 +495,4 @@ void app_main(void) {
 
   ESP_LOGI(TAG, "Device ready. Waiting for host announcements over UART.");
 }
+
