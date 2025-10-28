@@ -14,8 +14,8 @@
 // 24577152 - Kaushika Hewa Panvila
 //-------------------------------------------------------------------------
 // File Name: main.c
-// Description: Combined Final Code - Host Side
-// Initiates a state machine to identify the connected the device and used host libraries to host it.
+// Description: Combined Final Code - Device Side
+// Identify the state as per the host signal and enumerate HID device or MSC device dynamically
 // Project Partners: UWA, ANFF
 //-------------------------------------------------------------------------
  
@@ -495,4 +495,5 @@ void app_main(void) {
 
   ESP_LOGI(TAG, "Device ready. Waiting for host announcements over UART.");
 }
+
 
