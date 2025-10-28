@@ -1,16 +1,24 @@
-/*
- * SPDX-FileCopyrightText: 2022-2025 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: Unlicense OR CC0-1.0
- *
- * UART BRIDGE - ROBUST VERSION
- *
- * Changes:
- * - Added a mutex (g_device_mutex) to protect all shared globals
- * (g_msc_device, g_msc_info, g_data_buffer) against race conditions
- * between the app_main event loop and the uart_bridge_task.
- * - Cleaned up logic and timeouts.
- */
+//-------------------------------------------------------------------------
+// The University of Western Australia
+// Faculty of Engineering and Mathematical Sciences
+// ELEC5550 - Design Project
+// 2-Way Free Space Optical Communications System
+//-------------------------------------------------------------------------
+// Team 27
+// Author(s):
+// 23171349 - Ralph Pilapil
+// 24349076 - Karma Norbu
+// 24159891 - Rigzing Sherpa
+// 23280761 - Hongyuan Chen
+// 24639919 - Udaya Kristhbuge
+// 24577152 - Kaushika Hewa Panvila
+//-------------------------------------------------------------------------
+// File Name: esp1_host_uart_bridge.c
+// Description:MSC Host side code
+// Using standard usb/host library functions to host a MSC class usb device into the esp and push and pull callbacks 
+// Project Partners: UWA, ANFF
+//-------------------------------------------------------------------------
+
 
 #include <stdlib.h>
 #include <string.h>
